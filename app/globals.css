@@ -110,6 +110,11 @@
     background-clip: text;
   }
 
+  .red-text {
+    color: #FF0033;
+    -webkit-text-fill-color: #FF0033;
+  }
+
   .navy-gradient-text {
     background: linear-gradient(135deg, #1B2A4A 0%, #2A3F6B 100%);
     -webkit-background-clip: text;
