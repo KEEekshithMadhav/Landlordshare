@@ -428,7 +428,7 @@ export const SERVICES = [
   {
     title: "Home Loan Assistance",
     description:
-      "We are official affiliate partners with Axis Bank, HDFC, SBI, ICICI & other leading banks to secure pre-approved home loans with exclusive interest rates and fast approvals.",
+      "We are official affiliate partners with Axis Bank & other leading banks to secure pre-approved home loans with exclusive interest rates and fast approvals.",
     icon: "Banknote",
     color: "from-red-500/20 to-red-600/5",
     accentColor: "text-red-500",
