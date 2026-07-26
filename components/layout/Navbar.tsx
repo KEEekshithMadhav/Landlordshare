@@ -35,7 +35,7 @@ export default function Navbar() {
             {/* Logo with height 58px */}
             <Link href="/" className="flex items-center group">
               <img
-                src="/logo.png"
+                src="/logo1.png"
                 alt="LandlordShares Logo"
                 className="h-[100px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
               />

@@ -57,7 +57,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <img
-                src="/logo.png"
+                src="/logo1.png"
                 alt="LandlordShares"
                 className="h-12 w-auto object-contain"
               />
