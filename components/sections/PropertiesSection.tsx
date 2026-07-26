@@ -36,13 +36,13 @@ export default function PropertiesSection() {
         >
           <div>
             <span className="section-label mb-4 block">
-              <span className="w-6 h-0.5 bg-[#C5922E] rounded-full" />
+              <span className="w-6 h-0.5 bg-[#FF0033] rounded-full" />
               Live Listings
-              <span className="w-6 h-0.5 bg-[#C5922E] rounded-full" />
+              <span className="w-6 h-0.5 bg-[#FF0033] rounded-full" />
             </span>
             <h2 className="font-manrope text-4xl lg:text-5xl font-black text-slate-900 mb-3">
               Available{" "}
-              <span className="gold-gradient-text">Properties</span>
+              <span className="red-gradient-text">Properties</span>
             </h2>
             <p className="text-slate-600 text-lg">
               Updated daily. All listings are verified and RERA compliant.
@@ -61,8 +61,8 @@ export default function PropertiesSection() {
                 }}
                 className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
                   activeArea === area
-                    ? "bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white shadow-[0_4px_15px_rgba(197,146,46,0.3)]"
-                    : "bg-slate-200/70 text-slate-700 hover:bg-amber-50 hover:text-[#C5922E]"
+                    ? "bg-gradient-to-r from-[#FF0033] to-[#E60026] text-white shadow-[0_4px_15px_rgba(255,0,51,0.3)]"
+                    : "bg-slate-200/70 text-slate-700 hover:bg-red-50 hover:text-[#FF0033]"
                 }`}
               >
                 {area}
@@ -84,7 +84,7 @@ export default function PropertiesSection() {
               <motion.div
                 key={property.id}
                 variants={staggerItem}
-                className="group bg-white rounded-3xl border border-slate-200/80 overflow-hidden hover:border-[#C5922E]/40 transition-all duration-400 hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]"
+                className="group bg-white rounded-3xl border border-slate-200/80 overflow-hidden hover:border-[#FF0033]/40 transition-all duration-400 hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]"
               >
                 {/* Card image */}
                 <div className="relative h-48 overflow-hidden bg-slate-100">
@@ -98,7 +98,7 @@ export default function PropertiesSection() {
 
                   {/* RERA Badge */}
                   {property.rera && (
-                    <div className="absolute top-4 right-4 flex items-center gap-1 bg-[#C5922E] text-white text-[10px] font-bold px-2 py-1 rounded-lg shadow-sm">
+                    <div className="absolute top-4 right-4 flex items-center gap-1 bg-[#FF0033] text-white text-[10px] font-bold px-2 py-1 rounded-lg shadow-sm">
                       <BadgeCheck size={10} />
                       RERA
                     </div>
@@ -106,7 +106,7 @@ export default function PropertiesSection() {
 
                   {/* Location at bottom */}
                   <div className="absolute bottom-4 left-4 flex items-center gap-1.5">
-                    <MapPin size={13} className="text-[#E8C872]" />
+                    <MapPin size={13} className="text-[#FFCC00]" />
                     <span className="text-white text-sm font-semibold">{property.location}</span>
                   </div>
 
@@ -120,26 +120,26 @@ export default function PropertiesSection() {
 
                 {/* Card body */}
                 <div className="p-5">
-                  <h3 className="font-manrope font-bold text-lg text-slate-900 mb-1 group-hover:text-[#C5922E] transition-colors line-clamp-1">
+                  <h3 className="font-manrope font-bold text-lg text-slate-900 mb-1 group-hover:text-[#FF0033] transition-colors line-clamp-1">
                     {property.name}
                   </h3>
 
                   {/* Details grid */}
                   <div className="grid grid-cols-2 gap-2.5 my-3">
                     <div className="flex items-center gap-1.5 text-xs text-slate-600">
-                      <Home size={13} className="text-[#C5922E] shrink-0" />
+                      <Home size={13} className="text-[#FF0033] shrink-0" />
                       <span className="truncate">{property.type}</span>
                     </div>
                     <div className="flex items-center gap-1.5 text-xs text-slate-600">
-                      <Maximize2 size={13} className="text-[#C5922E] shrink-0" />
+                      <Maximize2 size={13} className="text-[#FF0033] shrink-0" />
                       <span className="truncate">{property.area}</span>
                     </div>
                     <div className="flex items-center gap-1.5 text-xs text-slate-600">
-                      <Clock size={13} className="text-[#C5922E] shrink-0" />
+                      <Clock size={13} className="text-[#FF0033] shrink-0" />
                       <span className="truncate">{property.possession}</span>
                     </div>
                     <div className="flex items-center gap-1.5 text-xs text-slate-600">
-                      <CreditCard size={13} className="text-[#C5922E] shrink-0" />
+                      <CreditCard size={13} className="text-[#FF0033] shrink-0" />
                       <span className="truncate">{property.payment}</span>
                     </div>
                   </div>
@@ -159,7 +159,7 @@ export default function PropertiesSection() {
                           location: property.location,
                         })
                       }
-                      className="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white text-xs font-bold rounded-xl hover:from-[#A67B24] hover:to-[#C5922E] hover:shadow-[0_0_20px_rgba(197,146,46,0.4)] transition-all duration-300 hover:scale-105 active:scale-95 shrink-0"
+                      className="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-[#FF0033] to-[#E60026] text-white text-xs font-bold rounded-xl hover:from-[#D6002B] hover:to-[#FF0033] hover:shadow-[0_0_20px_rgba(255,0,51,0.4)] transition-all duration-300 hover:scale-105 active:scale-95 shrink-0"
                     >
                       Know More
                       <ArrowRight size={13} />
@@ -182,7 +182,7 @@ export default function PropertiesSection() {
           >
             <button
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#C5922E] text-[#C5922E] font-bold rounded-2xl hover:bg-gradient-to-r hover:from-[#C5922E] hover:to-[#D4A843] hover:text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(197,146,46,0.3)]"
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#FF0033] text-[#FF0033] font-bold rounded-2xl hover:bg-gradient-to-r hover:from-[#FF0033] hover:to-[#E60026] hover:text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,0,51,0.3)]"
             >
               {showAll ? "Show Initial Properties" : `View All (${filtered.length}) Properties`}
               {showAll ? <ChevronUp size={18} /> : <ArrowRight size={18} />}

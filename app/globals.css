@@ -4,16 +4,19 @@
   --font-manrope: "Manrope", sans-serif;
   --font-inter: "Inter", sans-serif;
 
-  --color-navy: #1B2A4A;
-  --color-navy-mid: #0F1D3A;
+  --color-navy: #0F1D3A;
+  --color-navy-mid: #1B2A4A;
   --color-navy-light: #2A3F6B;
   --color-navy-dark: #070E1C;
-  --color-gold: #C5922E;
-  --color-gold-light: #D4A843;
-  --color-gold-lighter: #E8C872;
-  --color-gold-dark: #A67B24;
 
-  --shadow-glow-gold: 0 0 30px rgb(197 146 46 / 0.3);
+  --color-red: #FF0033;
+  --color-red-light: #FF3355;
+  --color-red-dark: #D6002B;
+
+  --color-gold: #FFCC00;
+  --color-gold-light: #FFDD44;
+
+  --shadow-glow-red: 0 0 30px rgb(255 0 51 / 0.3);
   --shadow-glow-navy: 0 0 30px rgb(27 42 74 / 0.5);
   --shadow-card-hover: 0 20px 60px rgb(0 0 0 / 0.3);
 
@@ -68,14 +71,14 @@
   }
 
   ::selection {
-    background-color: #C5922E;
+    background-color: #FF0033;
     color: #FFFFFF;
   }
 
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: #F1F5F9; }
-  ::-webkit-scrollbar-thumb { background: #C5922E; border-radius: 10px; }
-  ::-webkit-scrollbar-thumb:hover { background: #D4A843; }
+  ::-webkit-scrollbar-thumb { background: #FF0033; border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover { background: #D6002B; }
 }
 
 @layer utilities {
@@ -100,8 +103,8 @@
     border: 1px solid rgb(255 255 255 / 0.5);
   }
 
-  .gold-gradient-text {
-    background: linear-gradient(135deg, #C5922E 0%, #E8C872 100%);
+  .gold-gradient-text, .red-gradient-text {
+    background: linear-gradient(135deg, #FF0033 0%, #FFCC00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -127,7 +130,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #C5922E;
+    color: #FF0033;
   }
 
   .badge {
@@ -141,8 +144,8 @@
 
   .grid-pattern {
     background-image:
-      linear-gradient(rgb(197 146 46 / 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(197 146 46 / 0.05) 1px, transparent 1px);
+      linear-gradient(rgb(255 0 51 / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 0 51 / 0.05) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 
@@ -159,8 +162,8 @@
   .float-4 { animation: float 4s ease-in-out 0.5s infinite; }
 
   /* Glow effects */
-  .glow-gold {
-    box-shadow: 0 0 30px rgb(197 146 46 / 0.3), 0 0 60px rgb(197 146 46 / 0.1);
+  .glow-red {
+    box-shadow: 0 0 30px rgb(255 0 51 / 0.3), 0 0 60px rgb(255 0 51 / 0.1);
   }
 }
 
@@ -179,7 +182,7 @@
 .gradient-border {
   position: relative;
   background: linear-gradient(#0F1D3A, #0F1D3A) padding-box,
-    linear-gradient(135deg, #C5922E, #E8C872) border-box;
+    linear-gradient(135deg, #FF0033, #FFCC00) border-box;
   border: 2px solid transparent;
 }
 

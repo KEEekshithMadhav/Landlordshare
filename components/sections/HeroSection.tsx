@@ -10,7 +10,7 @@ export default function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-end overflow-hidden"
     >
-      {/* Video Background with high transparency so video is neatly visible */}
+      {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
@@ -36,10 +36,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#0F1D3A]/60 border border-[#C5922E]/40 rounded-full mb-6 backdrop-blur-sm shadow-md"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[#0F1D3A]/60 border border-[#FF0033]/40 rounded-full mb-6 backdrop-blur-sm shadow-md"
           >
-            <div className="w-2.5 h-2.5 bg-[#D4A843] rounded-full animate-pulse" />
-            <span className="text-[#E8C872] text-sm font-bold tracking-wide">
+            <div className="w-2.5 h-2.5 bg-[#FF0033] rounded-full animate-pulse" />
+            <span className="text-[#FFCC00] text-sm font-bold tracking-wide">
               🏙️ Hyderabad&apos;s #1 Landlord Share Platform
             </span>
           </motion.div>
@@ -53,8 +53,8 @@ export default function HeroSection() {
           >
             Buy Verified
             <br />
-            <span className="inline-block pb-1 border-b-[4px] border-[#C5922E]">
-              <span className="gold-gradient-text">Landlord Share</span>
+            <span className="inline-block pb-1 border-b-[4px] border-[#FF0033]">
+              <span className="red-gradient-text">Landlord Share</span>
             </span>
             <br />
             <span className="text-white">Property Safely.</span>
@@ -70,7 +70,7 @@ export default function HeroSection() {
             We help first-time buyers access{" "}
             <span className="text-white font-bold">exclusive landlord share apartments</span> in
             Kokapet, Tellapur, Neopolis & more — at{" "}
-            <span className="text-[#E8C872] font-bold">10–20% below builder price</span>, with
+            <span className="text-[#FFCC00] font-bold">10–20% below builder price</span>, with
             full legal verification and zero hidden charges.
           </motion.p>
 
@@ -83,7 +83,7 @@ export default function HeroSection() {
           >
             <a
               href="#properties"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white font-bold text-base rounded-2xl hover:from-[#A67B24] hover:to-[#C5922E] shadow-[0_10px_25px_rgba(197,146,46,0.4)] transition-all duration-300 hover:scale-105 active:scale-95"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#FF0033] to-[#E60026] text-white font-bold text-base rounded-2xl hover:from-[#D6002B] hover:to-[#FF0033] shadow-[0_10px_25px_rgba(255,0,51,0.4)] transition-all duration-300 hover:scale-105 active:scale-95"
             >
               Explore Properties
               <ArrowRight size={18} />
@@ -108,7 +108,7 @@ export default function HeroSection() {
           >
             {["RERA Approved Projects", "Zero Brokerage", "Legal Document Verified", "Free Site Visit"].map((item) => (
               <span key={item} className="flex items-center gap-2 bg-[#0F1D3A]/60 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-white/15 shadow-xs">
-                <span className="text-[#D4A843] font-bold">✓</span>
+                <span className="text-[#FFCC00] font-bold">✓</span>
                 {item}
               </span>
             ))}
@@ -129,7 +129,7 @@ export default function HeroSection() {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="w-5 h-8 border-2 border-white/50 rounded-full flex items-start justify-center pt-1.5"
         >
-          <div className="w-1 h-2 bg-[#C5922E] rounded-full" />
+          <div className="w-1 h-2 bg-[#FF0033] rounded-full" />
         </motion.div>
       </motion.div>
     </section>

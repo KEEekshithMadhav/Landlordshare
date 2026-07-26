@@ -1,5 +1,5 @@
 export const PHONE_NUMBER = "9885858529";
-export const WHATSAPP_NUMBER = "919885858529";
+export const WHATSAPP_NUMBER = "918585854853";
 export const PHONE_HREF = `tel:${PHONE_NUMBER}`;
 export const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}`;
 
@@ -428,10 +428,10 @@ export const SERVICES = [
   {
     title: "Home Loan Assistance",
     description:
-      "We partner with leading banks to help you secure the best home loan rates with minimal documentation and fast approval.",
+      "We are official affiliate partners with Axis Bank, HDFC, SBI, ICICI & other leading banks to secure pre-approved home loans with exclusive interest rates and fast approvals.",
     icon: "Banknote",
-    color: "from-emerald-500/20 to-emerald-600/5",
-    accentColor: "text-emerald-400",
+    color: "from-red-500/20 to-red-600/5",
+    accentColor: "text-red-500",
   },
   {
     title: "NRI Property Services",
