@@ -38,7 +38,7 @@ export default function ContactModal({
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4"
           >
-            <div className="bg-[#112240] border border-white/10 rounded-3xl p-8 w-full max-w-md shadow-[0_40px_100px_rgba(0,0,0,0.6)] relative">
+            <div className="bg-[#0F1D3A] border border-[#C5922E]/30 rounded-3xl p-8 w-full max-w-md shadow-[0_40px_100px_rgba(0,0,0,0.6)] relative">
               {/* Close */}
               <button
                 onClick={onClose}
@@ -49,14 +49,14 @@ export default function ContactModal({
 
               {/* Header */}
               <div className="mb-6">
-                <div className="w-14 h-14 bg-emerald-500/20 rounded-2xl flex items-center justify-center mb-4">
-                  <Building2 className="text-emerald-400" size={28} />
+                <div className="w-14 h-14 bg-[#C5922E]/20 rounded-2xl flex items-center justify-center mb-4 border border-[#C5922E]/30">
+                  <Building2 className="text-[#D4A843]" size={28} />
                 </div>
                 <h3 className="text-white text-xl font-bold font-manrope mb-1">
                   {propertyName || "Get in Touch"}
                 </h3>
                 {propertyLocation && (
-                  <div className="flex items-center gap-1.5 text-emerald-400 text-sm">
+                  <div className="flex items-center gap-1.5 text-[#D4A843] text-sm">
                     <MapPin size={14} />
                     <span>{propertyLocation}</span>
                   </div>
@@ -82,23 +82,23 @@ export default function ContactModal({
                     <p className="font-bold text-[#25D366]">WhatsApp</p>
                     <p className="text-white/60 text-sm">Chat with our property expert</p>
                   </div>
-                  <div className="ml-auto text-white/30 group-hover:text-emerald-400 transition-colors">
+                  <div className="ml-auto text-white/30 group-hover:text-[#25D366] transition-colors">
                     →
                   </div>
                 </a>
 
                 <a
                   href={PHONE_HREF}
-                  className="flex items-center gap-4 w-full bg-emerald-500/15 border border-emerald-500/30 hover:bg-emerald-500/25 hover:border-emerald-500/60 text-white p-4 rounded-2xl transition-all duration-300 group"
+                  className="flex items-center gap-4 w-full bg-[#C5922E]/15 border border-[#C5922E]/30 hover:bg-[#C5922E]/25 hover:border-[#C5922E]/60 text-white p-4 rounded-2xl transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#C5922E] to-[#D4A843] rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <Phone size={22} className="text-white" />
                   </div>
                   <div className="text-left">
-                    <p className="font-bold text-emerald-400">Call Now</p>
-                    <p className="text-white/60 text-sm">+91 85858 54853</p>
+                    <p className="font-bold text-[#D4A843]">Call Now</p>
+                    <p className="text-white/60 text-sm">+91 98858 58529</p>
                   </div>
-                  <div className="ml-auto text-white/30 group-hover:text-emerald-400 transition-colors">
+                  <div className="ml-auto text-white/30 group-hover:text-[#D4A843] transition-colors">
                     →
                   </div>
                 </a>

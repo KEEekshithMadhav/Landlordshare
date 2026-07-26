@@ -57,9 +57,9 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <img
-                src="/logo/logo.png"
+                src="/logo.png"
                 alt="LandlordShares"
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
 
@@ -69,16 +69,16 @@ export default function Footer() {
             </p>
 
             <div className="space-y-3 mb-6">
-              <a href={PHONE_HREF} className="flex items-center gap-3 text-sm text-white/60 hover:text-emerald-400 transition-colors">
-                <Phone size={15} className="text-emerald-400" />
-                +91 85858 54853
+              <a href={PHONE_HREF} className="flex items-center gap-3 text-sm text-white/60 hover:text-[#D4A843] transition-colors">
+                <Phone size={15} className="text-[#C5922E]" />
+                +91 98858 58529
               </a>
-              <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-white/60 hover:text-emerald-400 transition-colors">
-                <MessageCircle size={15} className="text-emerald-400" />
+              <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-white/60 hover:text-[#D4A843] transition-colors">
+                <MessageCircle size={15} className="text-[#C5922E]" />
                 WhatsApp Us
               </a>
               <div className="flex items-center gap-3 text-sm text-white/60">
-                <MapPin size={15} className="text-emerald-400 shrink-0" />
+                <MapPin size={15} className="text-[#C5922E] shrink-0" />
                 Kondapur, Hyderabad, Telangana
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="w-9 h-9 bg-white/5 hover:bg-emerald-500/20 rounded-xl flex items-center justify-center text-white/50 hover:text-emerald-400 transition-all border border-white/5 hover:border-emerald-500/30"
+                  className="w-9 h-9 bg-white/5 hover:bg-[#C5922E]/20 rounded-xl flex items-center justify-center text-white/50 hover:text-[#D4A843] transition-all border border-white/5 hover:border-[#C5922E]/30"
                 >
                   <Icon size={16} />
                 </a>
@@ -109,7 +109,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm text-white/50 hover:text-emerald-400 transition-colors"
+                      className="text-sm text-white/50 hover:text-[#D4A843] transition-colors"
                     >
                       {link.label}
                     </a>

@@ -4,15 +4,13 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { WHATSAPP_HREF } from "@/lib/constants";
 
-
-
 export default function HeroSection() {
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-start overflow-hidden"
     >
-      {/* Video Background */}
+      {/* Video Background with high transparency so video is neatly visible */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
@@ -24,30 +22,24 @@ export default function HeroSection() {
         >
           <source src="/videos/hyd.mp4" type="video/mp4" />
         </video>
-        {/* Multi-layer overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A1628]/70 via-[#0A1628]/50 to-[#0A1628]/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/60 via-transparent to-[#0A1628]/40" />
+
+        {/* Transparent gradient overlay: subtle left shadow for text legibility while keeping center & right crystal clear */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-900/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
       </div>
 
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 z-0 opacity-10 grid-pattern" />
-
-      {/* Animated orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] animate-pulse-slow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] animate-pulse-slow" style={{ animationDelay: "1.5s" }} />
-
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="max-w-4xl">
+      {/* Content — Transparent & Aligned to Left */}
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-20">
+        <div className="max-w-2xl text-left bg-transparent p-0">
           {/* Label */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/15 border border-emerald-500/30 rounded-full mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[#0F1D3A]/60 border border-[#C5922E]/40 rounded-full mb-6 backdrop-blur-sm shadow-md"
           >
-            <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-            <span className="text-emerald-400 text-sm font-semibold">
+            <div className="w-2.5 h-2.5 bg-[#D4A843] rounded-full animate-pulse" />
+            <span className="text-[#E8C872] text-sm font-bold tracking-wide">
               🏙️ Hyderabad&apos;s #1 Landlord Share Platform
             </span>
           </motion.div>
@@ -57,15 +49,15 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-manrope text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1] tracking-tight mb-5"
+            className="font-manrope text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] tracking-tight mb-6 drop-shadow-md"
           >
             Buy Verified
             <br />
-            <span className="inline-block pb-1 border-b-[3px] border-emerald-400">
-              <span className="emerald-gradient-text">Landlord Share</span>
+            <span className="inline-block pb-1 border-b-[4px] border-[#C5922E]">
+              <span className="gold-gradient-text">Landlord Share</span>
             </span>
             <br />
-            <span className="text-white/90">Flats Safely.</span>
+            <span className="text-white">Property Safely.</span>
           </motion.h1>
 
           {/* Subheading */}
@@ -73,12 +65,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="text-white/70 text-base leading-relaxed mb-8 max-w-xl font-inter"
+            className="text-slate-100 text-base sm:text-lg leading-relaxed mb-8 font-inter font-medium drop-shadow-sm max-w-xl"
           >
             We help first-time buyers access{" "}
-            <span className="text-white font-medium">exclusive landlord share apartments</span> in
+            <span className="text-white font-bold">exclusive landlord share apartments</span> in
             Kokapet, Tellapur, Neopolis & more — at{" "}
-            <span className="text-emerald-400 font-medium">10–20% below builder price</span>, with
+            <span className="text-[#E8C872] font-bold">10–20% below builder price</span>, with
             full legal verification and zero hidden charges.
           </motion.p>
 
@@ -87,11 +79,11 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="flex flex-col sm:flex-row gap-4 mb-16"
+            className="flex flex-col sm:flex-row gap-4 mb-10"
           >
             <a
               href="#properties"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-500 text-white font-bold text-base rounded-2xl hover:bg-emerald-600 hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] transition-all duration-300 hover:scale-105 active:scale-95"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white font-bold text-base rounded-2xl hover:from-[#A67B24] hover:to-[#C5922E] shadow-[0_10px_25px_rgba(197,146,46,0.4)] transition-all duration-300 hover:scale-105 active:scale-95"
             >
               Explore Properties
               <ArrowRight size={18} />
@@ -100,7 +92,7 @@ export default function HeroSection() {
               href={WHATSAPP_HREF}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/20 text-white font-bold text-base rounded-2xl hover:bg-white/15 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#0F1D3A]/70 border border-white/30 text-white font-bold text-base rounded-2xl hover:bg-[#0F1D3A]/90 backdrop-blur-md transition-all duration-300"
             >
               <MessageCircle size={18} />
               Free Consultation
@@ -112,18 +104,16 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="flex flex-wrap items-center gap-6 text-white/50 text-sm"
+            className="flex flex-wrap items-center gap-3 sm:gap-4 text-slate-100 text-sm font-medium"
           >
             {["RERA Approved Projects", "Zero Brokerage", "Legal Document Verified", "Free Site Visit"].map((item) => (
-              <span key={item} className="flex items-center gap-2">
-                <span className="text-emerald-400">✓</span>
+              <span key={item} className="flex items-center gap-2 bg-[#0F1D3A]/60 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-white/15 shadow-xs">
+                <span className="text-[#D4A843] font-bold">✓</span>
                 {item}
               </span>
             ))}
           </motion.div>
         </div>
-
-
       </div>
 
       {/* Scroll indicator */}
@@ -131,15 +121,15 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70"
       >
-        <span className="text-xs font-medium uppercase tracking-widest">Scroll to explore</span>
+        <span className="text-xs font-semibold uppercase tracking-widest">Scroll to explore</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-5 h-8 border-2 border-white/20 rounded-full flex items-start justify-center pt-1.5"
+          className="w-5 h-8 border-2 border-white/50 rounded-full flex items-start justify-center pt-1.5"
         >
-          <div className="w-1 h-2 bg-emerald-400 rounded-full" />
+          <div className="w-1 h-2 bg-[#C5922E] rounded-full" />
         </motion.div>
       </motion.div>
     </section>

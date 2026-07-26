@@ -2,43 +2,47 @@
 
 import { motion } from "framer-motion";
 import { PARTNERS } from "@/lib/constants";
-import { Building2 } from "lucide-react";
 
 export default function TrustedBy() {
   const doubled = [...PARTNERS, ...PARTNERS];
 
   return (
-    <section className="py-16 bg-[#070E1C] border-y border-white/5 overflow-hidden">
+    <section className="py-14 bg-white border-y border-slate-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+        <motion.h2
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="text-center text-white/30 text-sm uppercase tracking-widest font-semibold"
+          className="font-manrope text-3xl sm:text-4xl font-black text-[#0F1D3A] tracking-tight"
         >
-          Featuring properties from Hyderabad&apos;s premier developers
-        </motion.p>
+          Our partners
+        </motion.h2>
       </div>
 
-      {/* Marquee */}
+      {/* Clean Marquee of Pure Logos */}
       <div className="relative">
         {/* Left fade */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#070E1C] to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
         {/* Right fade */}
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#070E1C] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10" />
 
-        <div className="flex marquee-track gap-10">
+        <div className="flex marquee-track items-center gap-14 sm:gap-20">
           {doubled.map((partner, i) => (
             <div
-              key={`${partner}-${i}`}
-              className="flex items-center gap-3 px-6 py-3 bg-white/[0.04] border border-white/[0.06] rounded-2xl whitespace-nowrap group hover:border-emerald-500/20 transition-colors"
+              key={`${partner.name}-${i}`}
+              className="flex items-center justify-center shrink-0 h-16 w-36 cursor-pointer group"
             >
-              <div className="w-7 h-7 bg-emerald-500/20 rounded-lg flex items-center justify-center">
-                <Building2 size={14} className="text-emerald-400" />
-              </div>
-              <span className="text-white/50 group-hover:text-white/80 transition-colors text-sm font-medium font-manrope">
-                {partner}
-              </span>
+              {partner.logo ? (
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-12 w-auto max-w-[130px] object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                />
+              ) : (
+                <span className="font-manrope font-bold text-slate-500 text-base grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:text-[#C5922E] transition-all">
+                  {partner.name}
+                </span>
+              )}
             </div>
           ))}
         </div>

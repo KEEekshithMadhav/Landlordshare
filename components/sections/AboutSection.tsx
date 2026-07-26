@@ -28,7 +28,7 @@ const highlights = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section-padding bg-[#070E1C] overflow-hidden">
+    <section id="about" className="section-padding bg-[#F8FAFC] overflow-hidden border-y border-slate-200/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -40,37 +40,37 @@ export default function AboutSection() {
             transition={{ duration: 0.7 }}
           >
             <span className="section-label mb-5 block">
-              <span className="w-6 h-0.5 bg-emerald-500 rounded-full" />
+              <span className="w-6 h-0.5 bg-[#C5922E] rounded-full" />
               About Us
-              <span className="w-6 h-0.5 bg-emerald-500 rounded-full" />
+              <span className="w-6 h-0.5 bg-[#C5922E] rounded-full" />
             </span>
 
-            <h2 className="font-manrope text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
+            <h2 className="font-manrope text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-[1.1]">
               What Are{" "}
-              <span className="emerald-gradient-text">Landlord Share</span>{" "}
+              <span className="gold-gradient-text">Landlord Share</span>{" "}
               Flats?
             </h2>
 
-            <div className="space-y-5 text-white/65 text-base leading-relaxed">
+            <div className="space-y-5 text-slate-600 text-base leading-relaxed font-inter">
               <p>
                 In some real estate projects, the landowner and builder work together.
                 The landowner provides the land, and the builder constructs the apartments.
                 As part of this agreement, the landowner receives a{" "}
-                <span className="text-white font-semibold">fixed number of flats</span>{" "}
+                <span className="text-slate-900 font-bold">fixed number of flats</span>{" "}
                 in the completed project. These are called{" "}
-                <span className="text-emerald-400 font-semibold">landlord share flats</span>.
+                <span className="text-[#C5922E] font-bold">landlord share flats</span>.
               </p>
               <p>
                 Sometimes, the landowner sells these flats directly to buyers. In certain cases,
                 they may be available at{" "}
-                <span className="text-white font-semibold">competitive prices</span>{" "}
+                <span className="text-slate-900 font-bold">competitive prices</span>{" "}
                 compared to the builder's regular units.
               </p>
               <p>
-                At <span className="text-emerald-400 font-semibold">LLS</span>, we help
+                At <span className="text-[#C5922E] font-bold">LandLordShares</span>, we help
                 first-time buyers understand the process, verify all documents, and ensure
                 a safe and transparent purchase — so you can{" "}
-                <span className="text-white font-semibold">buy with confidence and clarity</span>.
+                <span className="text-slate-900 font-bold">buy with confidence and clarity</span>.
               </p>
             </div>
 
@@ -79,14 +79,14 @@ export default function AboutSection() {
                 href={WHATSAPP_HREF}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-emerald-500 text-white font-bold rounded-2xl hover:bg-emerald-600 hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white font-bold rounded-2xl hover:from-[#A67B24] hover:to-[#C5922E] shadow-[0_4px_15px_rgba(197,146,46,0.3)] transition-all duration-300 hover:scale-105"
               >
                 <MessageCircle size={17} />
                 Talk to an Expert
               </a>
               <a
                 href="#properties"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-white/15 text-white/80 font-semibold rounded-2xl hover:border-emerald-500/40 hover:text-emerald-400 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-slate-300 text-slate-800 font-semibold rounded-2xl hover:bg-white hover:border-slate-400 shadow-xs transition-all duration-300"
               >
                 View Properties
                 <ArrowRight size={17} />
@@ -106,16 +106,16 @@ export default function AboutSection() {
               <motion.div
                 key={item.title}
                 variants={staggerItem}
-                className="flex gap-5 p-6 bg-white/[0.04] border border-white/[0.07] rounded-2xl hover:border-emerald-500/25 hover:bg-white/[0.06] transition-all duration-300 group"
+                className="flex gap-5 p-6 bg-white border border-slate-200/80 rounded-2xl hover:border-[#C5922E]/30 hover:shadow-md transition-all duration-300 group shadow-xs"
               >
-                <div className="w-12 h-12 shrink-0 bg-emerald-500/15 border border-emerald-500/25 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <item.icon size={22} className="text-emerald-400" />
+                <div className="w-12 h-12 shrink-0 bg-amber-50 border border-amber-200 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <item.icon size={22} className="text-[#C5922E]" />
                 </div>
                 <div>
-                  <h3 className="font-manrope font-bold text-white text-base mb-1.5">
+                  <h3 className="font-manrope font-bold text-slate-900 text-base mb-1.5">
                     {item.title}
                   </h3>
-                  <p className="text-white/55 text-sm leading-relaxed">
+                  <p className="text-slate-600 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -125,16 +125,16 @@ export default function AboutSection() {
             {/* Stats row */}
             <div className="grid grid-cols-3 gap-4 pt-2">
               {[
-                { value: "₹500Cr+", label: "Deals Closed" },
-                { value: "2,000+", label: "Happy Buyers" },
-                { value: "98%", label: "Satisfaction" },
+                { value: "₹150Cr+", label: "Deals Closed" },
+                { value: "78+", label: "Happy Buyers" },
+                { value: "100%", label: "Satisfaction" },
               ].map((s) => (
                 <div
                   key={s.label}
-                  className="text-center p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl"
+                  className="text-center p-4 bg-amber-50/70 border border-amber-200/80 rounded-2xl shadow-xs"
                 >
-                  <p className="font-manrope font-black text-xl text-emerald-400">{s.value}</p>
-                  <p className="text-white/45 text-xs mt-1">{s.label}</p>
+                  <p className="font-manrope font-black text-xl text-[#C5922E]">{s.value}</p>
+                  <p className="text-slate-600 font-semibold text-xs mt-1">{s.label}</p>
                 </div>
               ))}
             </div>

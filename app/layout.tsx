@@ -90,7 +90,7 @@ const jsonLd = {
   description:
     "Verified landlord share flats in Hyderabad — Kokapet, Tellapur, Neopolis and more.",
   url: "https://landlordshares.com",
-  telephone: "+918585854853",
+  telephone: "+919885858529",
   areaServed: "Hyderabad, Telangana, India",
   address: {
     "@type": "PostalAddress",
@@ -101,7 +101,7 @@ const jsonLd = {
   priceRange: "₹₹₹",
   openingHours: "Mo-Sa 09:00-19:00",
   sameAs: [
-    "https://wa.me/918585854853",
+    "https://wa.me/919885858529",
   ],
 };
 
@@ -111,7 +111,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <script
           type="application/ld+json"
@@ -119,10 +119,10 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#0A1628" />
+        <meta name="theme-color" content="#10B981" />
       </head>
       <body
-        className={`${manrope.variable} ${inter.variable} font-inter antialiased bg-[#0A1628] text-white`}
+        className={`${manrope.variable} ${inter.variable} font-inter antialiased bg-[#F8FAFC] text-[#0F172A]`}
       >
         <ScrollProgress />
         <Navbar />

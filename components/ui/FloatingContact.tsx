@@ -31,9 +31,9 @@ export default function FloatingContact() {
               initial={{ opacity: 0, scale: 0.5, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.5, y: 20 }}
-              className="flex items-center gap-2 bg-emerald-500 text-white px-4 py-3 rounded-2xl shadow-lg font-semibold text-sm hover:bg-emerald-600 transition-colors"
+              className="flex items-center gap-2 bg-[#1B2A4A] text-white px-4 py-3 rounded-2xl shadow-lg font-semibold text-sm hover:bg-[#0F1D3A] transition-colors border border-[#C5922E]/40"
             >
-              <Phone size={18} />
+              <Phone size={18} className="text-[#D4A843]" />
               Call Now
             </motion.a>
           </>
@@ -44,7 +44,7 @@ export default function FloatingContact() {
         onClick={() => setOpen(!open)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="w-14 h-14 bg-emerald-500 text-white rounded-full shadow-[0_0_30px_rgba(16,185,129,0.5)] flex items-center justify-center transition-colors hover:bg-emerald-600"
+        className="w-14 h-14 bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white rounded-full shadow-[0_0_30px_rgba(197,146,46,0.5)] flex items-center justify-center transition-colors hover:from-[#A67B24] hover:to-[#C5922E]"
         aria-label="Contact us"
       >
         <AnimatePresence mode="wait">

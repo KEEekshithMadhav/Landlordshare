@@ -7,12 +7,12 @@ import { viewportConfig } from "@/lib/animations";
 
 export default function FinalCTA() {
   return (
-    <section className="section-padding bg-[#0A1628] relative overflow-hidden">
+    <section className="section-padding bg-[#0F1D3A] relative overflow-hidden">
       {/* Animated bg orbs */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[100px]" />
-        <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/5 rounded-full blur-[80px]" />
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-purple-500/5 rounded-full blur-[80px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C5922E]/10 rounded-full blur-[100px]" />
+        <div className="absolute top-0 left-0 w-64 h-64 bg-[#1B2A4A]/20 rounded-full blur-[80px]" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#D4A843]/10 rounded-full blur-[80px]" />
         <div className="absolute inset-0 grid-pattern opacity-5" />
       </div>
 
@@ -24,9 +24,9 @@ export default function FinalCTA() {
           transition={{ duration: 0.7 }}
         >
           {/* Label */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/15 border border-emerald-500/30 rounded-full mb-8">
-            <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-            <span className="text-emerald-400 text-sm font-semibold">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C5922E]/15 border border-[#C5922E]/30 rounded-full mb-8">
+            <div className="w-2 h-2 bg-[#D4A843] rounded-full animate-pulse" />
+            <span className="text-[#E8C872] text-sm font-semibold">
               Limited Slots Available – Book Today
             </span>
           </div>
@@ -34,7 +34,7 @@ export default function FinalCTA() {
           {/* Headline */}
           <h2 className="font-manrope text-5xl lg:text-7xl font-black text-white mb-6 leading-[1.05]">
             Ready to Own Your{" "}
-            <span className="emerald-gradient-text">Dream Home</span>
+            <span className="gold-gradient-text">Dream Home</span>
             <br />
             in Hyderabad?
           </h2>
@@ -51,7 +51,7 @@ export default function FinalCTA() {
               href={WHATSAPP_HREF}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-10 py-5 bg-emerald-500 text-white font-bold text-lg rounded-2xl hover:bg-emerald-600 hover:shadow-[0_0_40px_rgba(16,185,129,0.5)] transition-all duration-300 hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white font-bold text-lg rounded-2xl hover:from-[#A67B24] hover:to-[#C5922E] hover:shadow-[0_0_40px_rgba(197,146,46,0.5)] transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <MessageCircle size={22} />
               Book Free Consultation
@@ -61,7 +61,7 @@ export default function FinalCTA() {
               className="inline-flex items-center gap-3 px-10 py-5 bg-white/10 border border-white/20 text-white font-bold text-lg rounded-2xl hover:bg-white/15 hover:border-white/30 transition-all duration-300"
             >
               <Phone size={22} />
-              Call +91 85858 54853
+              Call +91 98858 58529
             </a>
           </div>
 
@@ -73,7 +73,7 @@ export default function FinalCTA() {
               "✓ Free Site Visit",
               "✓ End-to-End Support",
             ].map((item) => (
-              <span key={item} className="hover:text-emerald-400 transition-colors cursor-default">
+              <span key={item} className="hover:text-[#E8C872] transition-colors cursor-default">
                 {item}
               </span>
             ))}

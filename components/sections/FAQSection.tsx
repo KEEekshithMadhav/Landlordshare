@@ -3,14 +3,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, HelpCircle } from "lucide-react";
-import { FAQS } from "@/lib/constants";
+import { FAQS, WHATSAPP_HREF } from "@/lib/constants";
 import { viewportConfig, staggerContainer, staggerItem } from "@/lib/animations";
 
 export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="section-padding bg-[#070E1C]">
+    <section id="faq" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
           {/* Left: Header */}
@@ -21,31 +21,31 @@ export default function FAQSection() {
             className="lg:col-span-2"
           >
             <span className="section-label mb-4 block">
-              <span className="w-6 h-0.5 bg-emerald-500 rounded-full" />
+              <span className="w-6 h-0.5 bg-[#C5922E] rounded-full" />
               FAQ
-              <span className="w-6 h-0.5 bg-emerald-500 rounded-full" />
+              <span className="w-6 h-0.5 bg-[#C5922E] rounded-full" />
             </span>
-            <h2 className="font-manrope text-4xl lg:text-5xl font-black text-white mb-4">
+            <h2 className="font-manrope text-4xl lg:text-5xl font-black text-slate-900 mb-4">
               Common{" "}
-              <span className="emerald-gradient-text">Questions</span>
+              <span className="gold-gradient-text">Questions</span>
             </h2>
-            <p className="text-white/60 text-lg leading-relaxed mb-8">
+            <p className="text-slate-600 text-lg leading-relaxed mb-8">
               Everything you need to know about landlord share flats and our process.
             </p>
 
-            <div className="p-6 bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 border border-emerald-500/20 rounded-3xl">
+            <div className="p-6 bg-amber-50/70 border border-amber-200/80 rounded-3xl shadow-xs">
               <div className="flex items-center gap-3 mb-3">
-                <HelpCircle className="text-emerald-400" size={20} />
-                <p className="text-white font-bold">Still have questions?</p>
+                <HelpCircle className="text-[#C5922E]" size={20} />
+                <p className="text-slate-900 font-bold">Still have questions?</p>
               </div>
-              <p className="text-white/60 text-sm mb-4">
+              <p className="text-slate-600 text-sm mb-4 font-medium">
                 Our experts are available Mon–Sat, 9 AM – 7 PM.
               </p>
               <a
-                href="https://wa.me/918585854853"
+                href={WHATSAPP_HREF}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-bold text-[#C5922E] hover:text-[#A67B24] transition-colors"
               >
                 Chat on WhatsApp →
               </a>
@@ -64,17 +64,17 @@ export default function FAQSection() {
               <motion.div
                 key={i}
                 variants={staggerItem}
-                className={`bg-[#112240] border rounded-2xl overflow-hidden transition-all duration-300 ${
+                className={`bg-white border rounded-2xl overflow-hidden transition-all duration-300 ${
                   open === i
-                    ? "border-emerald-500/40 shadow-[0_0_30px_rgba(16,185,129,0.15)]"
-                    : "border-white/[0.08] hover:border-emerald-500/20"
+                    ? "border-[#C5922E]/50 shadow-[0_4px_20px_rgba(197,146,46,0.12)]"
+                    : "border-slate-200/80 hover:border-[#C5922E]/30"
                 }`}
               >
                 <button
                   onClick={() => setOpen(open === i ? null : i)}
                   className="w-full flex items-center justify-between p-5 text-left"
                 >
-                  <span className="font-manrope font-semibold text-white pr-4 text-base">
+                  <span className="font-manrope font-semibold text-slate-900 pr-4 text-base">
                     {faq.question}
                   </span>
                   <motion.div
@@ -82,8 +82,8 @@ export default function FAQSection() {
                     transition={{ duration: 0.3 }}
                     className={`shrink-0 w-7 h-7 rounded-xl flex items-center justify-center transition-colors ${
                       open === i
-                        ? "bg-emerald-500 text-white"
-                        : "bg-white/5 text-white/40"
+                        ? "bg-gradient-to-r from-[#C5922E] to-[#D4A843] text-white"
+                        : "bg-slate-100 text-slate-500"
                     }`}
                   >
                     <ChevronDown size={16} />
@@ -99,7 +99,7 @@ export default function FAQSection() {
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
                       <div className="px-5 pb-5">
-                        <p className="text-white/60 text-sm leading-relaxed border-t border-white/[0.08] pt-4">
+                        <p className="text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4 font-normal">
                           {faq.answer}
                         </p>
                       </div>
