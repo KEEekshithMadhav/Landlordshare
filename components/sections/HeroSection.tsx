@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-start overflow-hidden"
+      className="relative min-h-screen flex items-center justify-end overflow-hidden"
     >
       {/* Video Background with high transparency so video is neatly visible */}
       <div className="absolute inset-0 z-0">
@@ -23,14 +23,14 @@ export default function HeroSection() {
           <source src="/videos/hyd.mp4" type="video/mp4" />
         </video>
 
-        {/* Transparent gradient overlay: subtle left shadow for text legibility while keeping center & right crystal clear */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-900/40 to-transparent" />
+        {/* Transparent gradient overlay: subtle right shadow for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-l from-slate-950/85 via-slate-900/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
       </div>
 
-      {/* Content — Transparent & Aligned to Left */}
+      {/* Content — Transparent & Aligned to Right */}
       <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-20">
-        <div className="max-w-2xl text-left bg-transparent p-0">
+        <div className="max-w-2xl text-right ml-auto bg-transparent p-0">
           {/* Label */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="text-slate-100 text-base sm:text-lg leading-relaxed mb-8 font-inter font-medium drop-shadow-sm max-w-xl"
+            className="text-slate-100 text-base sm:text-lg leading-relaxed mb-8 font-inter font-medium drop-shadow-sm max-w-xl ml-auto"
           >
             We help first-time buyers access{" "}
             <span className="text-white font-bold">exclusive landlord share apartments</span> in
@@ -79,7 +79,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="flex flex-col sm:flex-row gap-4 mb-10"
+            className="flex flex-col sm:flex-row justify-end gap-4 mb-10"
           >
             <a
               href="#properties"
@@ -104,7 +104,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="flex flex-wrap items-center gap-3 sm:gap-4 text-slate-100 text-sm font-medium"
+            className="flex flex-wrap items-center justify-end gap-3 sm:gap-4 text-slate-100 text-sm font-medium"
           >
             {["RERA Approved Projects", "Zero Brokerage", "Legal Document Verified", "Free Site Visit"].map((item) => (
               <span key={item} className="flex items-center gap-2 bg-[#0F1D3A]/60 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-white/15 shadow-xs">
