@@ -37,7 +37,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="LandlordShares Logo"
-                className="h-[58px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                className="h-[100px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
               />
             </Link>
 
