@@ -15,7 +15,7 @@ export const PROPERTIES = [
   // --- First 8 Properties (Displayed initially as per List of Availability) ---
   {
     id: 1,
-    name: "LINK by Raghava",
+    name: "Linq by Raghava",
     location: "Kokapet",
     type: "3 BHK Premium",
     area: "1,798 – 2,388 Sq.Ft.",
@@ -26,7 +26,7 @@ export const PROPERTIES = [
     badge: "Premium",
     highlight: "Gated Community",
     tag: "Kokapet",
-    image: "/properties/link-raghava.png",
+    image: "/properties/linq-raghava.png",
   },
   {
     id: 2,
