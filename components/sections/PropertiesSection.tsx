@@ -33,7 +33,7 @@ export default function PropertiesSection() {
   );
 
   return (
-    <section id="properties" className="section-padding bg-[#F8FAFC] dark:bg-[#0A1628]">
+    <section id="properties" className="section-padding bg-[#0A1628]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -48,18 +48,18 @@ export default function PropertiesSection() {
               Live Listings
               <span className="w-6 h-0.5 bg-emerald-500 rounded-full" />
             </span>
-            <h2 className="font-manrope text-4xl lg:text-5xl font-black text-[#0A1628] dark:text-white mb-3">
+            <h2 className="font-manrope text-4xl lg:text-5xl font-black text-white mb-3">
               Available{" "}
               <span className="emerald-gradient-text">Properties</span>
             </h2>
-            <p className="text-[#0A1628]/60 dark:text-white/60 text-lg">
+            <p className="text-white/60 text-lg">
               Updated daily. All listings are verified and RERA compliant.
             </p>
           </div>
 
           {/* Filter chips */}
           <div className="flex items-center gap-2 flex-wrap">
-            <SlidersHorizontal size={16} className="text-[#0A1628]/40 dark:text-white/40" />
+            <SlidersHorizontal size={16} className="text-white/40" />
             {AREAS.map((area) => (
               <button
                 key={area}
@@ -67,7 +67,7 @@ export default function PropertiesSection() {
                 className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
                   activeArea === area
                     ? "bg-emerald-500 text-white shadow-[0_0_20px_rgba(16,185,129,0.3)]"
-                    : "bg-[#0A1628]/10 dark:bg-white/5 text-[#0A1628]/60 dark:text-white/60 hover:bg-emerald-500/10 hover:text-emerald-500"
+                    : "bg-white/5 text-white/60 hover:bg-emerald-500/10 hover:text-emerald-400"
                 }`}
               >
                 {area}
@@ -89,7 +89,7 @@ export default function PropertiesSection() {
               <motion.div
                 key={property.id}
                 variants={staggerItem}
-                className="group bg-white dark:bg-[#112240] rounded-3xl border border-[#E2E8F0] dark:border-white/[0.06] overflow-hidden hover:border-emerald-500/30 transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
+                className="group bg-[#112240] rounded-3xl border border-white/[0.08] overflow-hidden hover:border-emerald-500/30 transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
               >
                 {/* Card image */}
                 <div className="relative h-52 overflow-hidden bg-[#112240]">
@@ -130,35 +130,35 @@ export default function PropertiesSection() {
 
                 {/* Card body */}
                 <div className="p-6">
-                  <h3 className="font-manrope font-bold text-xl text-[#0A1628] dark:text-white mb-1 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors">
+                  <h3 className="font-manrope font-bold text-xl text-white mb-1 group-hover:text-emerald-400 transition-colors">
                     {property.name}
                   </h3>
 
                   {/* Details grid */}
                   <div className="grid grid-cols-2 gap-3 my-4">
-                    <div className="flex items-center gap-2 text-sm text-[#0A1628]/60 dark:text-white/50">
+                    <div className="flex items-center gap-2 text-sm text-white/50">
                       <Home size={14} className="text-emerald-500 shrink-0" />
                       <span>{property.type}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-[#0A1628]/60 dark:text-white/50">
+                    <div className="flex items-center gap-2 text-sm text-white/50">
                       <Maximize2 size={14} className="text-emerald-500 shrink-0" />
                       <span className="truncate">{property.area}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-[#0A1628]/60 dark:text-white/50">
+                    <div className="flex items-center gap-2 text-sm text-white/50">
                       <Clock size={14} className="text-emerald-500 shrink-0" />
                       <span>{property.possession}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-[#0A1628]/60 dark:text-white/50">
+                    <div className="flex items-center gap-2 text-sm text-white/50">
                       <CreditCard size={14} className="text-emerald-500 shrink-0" />
                       <span className="truncate">{property.payment}</span>
                     </div>
                   </div>
 
                   {/* Price + CTA */}
-                  <div className="flex items-center justify-between pt-4 border-t border-[#E2E8F0] dark:border-white/[0.06]">
+                  <div className="flex items-center justify-between pt-4 border-t border-white/[0.08]">
                     <div>
-                      <p className="text-xs text-[#0A1628]/40 dark:text-white/30 mb-0.5">Starting from</p>
-                      <p className="font-manrope font-black text-lg text-[#0A1628] dark:text-white">
+                      <p className="text-xs text-white/40 mb-0.5">Starting from</p>
+                      <p className="font-manrope font-black text-lg text-white">
                         {property.price}
                       </p>
                     </div>

@@ -24,7 +24,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="section-padding bg-white dark:bg-[#0A1628]">
+    <section id="services" className="section-padding bg-[#070E1C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -39,11 +39,11 @@ export default function ServicesSection() {
             Our Services
             <span className="w-6 h-0.5 bg-emerald-500 rounded-full" />
           </span>
-          <h2 className="font-manrope text-4xl lg:text-5xl font-black text-[#0A1628] dark:text-white mb-4">
+          <h2 className="font-manrope text-4xl lg:text-5xl font-black text-white mb-4">
             Everything You Need to{" "}
             <span className="emerald-gradient-text">Invest Smartly</span>
           </h2>
-          <p className="text-[#0A1628]/60 dark:text-white/60 text-lg leading-relaxed">
+          <p className="text-white/60 text-lg leading-relaxed">
             From finding the right property to closing the deal — we provide comprehensive
             real estate services with zero compromises.
           </p>
@@ -63,7 +63,7 @@ export default function ServicesSection() {
               <motion.div
                 key={service.title}
                 variants={staggerItem}
-                className="group relative p-7 bg-[#F8FAFC] dark:bg-[#112240] rounded-3xl border border-transparent hover:border-emerald-500/20 transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] cursor-default overflow-hidden"
+                className="group relative p-7 bg-[#112240] rounded-3xl border border-white/[0.08] hover:border-emerald-500/20 transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] cursor-default overflow-hidden"
               >
                 {/* Gradient background on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-400 rounded-3xl`} />
@@ -77,10 +77,10 @@ export default function ServicesSection() {
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="font-manrope font-bold text-xl text-[#0A1628] dark:text-white mb-3 group-hover:text-emerald-400 dark:group-hover:text-emerald-400 transition-colors">
+                  <h3 className="font-manrope font-bold text-xl text-white mb-3 group-hover:text-emerald-400 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-[#0A1628]/60 dark:text-white/60 text-sm leading-relaxed mb-5">
+                  <p className="text-white/60 text-sm leading-relaxed mb-5">
                     {service.description}
                   </p>
                   <button className={`inline-flex items-center gap-1.5 text-sm font-semibold ${service.accentColor} group-hover:gap-3 transition-all duration-300`}>

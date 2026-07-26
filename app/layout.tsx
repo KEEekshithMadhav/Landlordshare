@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
@@ -112,7 +111,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark">
       <head>
         <script
           type="application/ld+json"
@@ -123,16 +122,14 @@ export default function RootLayout({
         <meta name="theme-color" content="#0A1628" />
       </head>
       <body
-        className={`${manrope.variable} ${inter.variable} font-inter antialiased`}
+        className={`${manrope.variable} ${inter.variable} font-inter antialiased bg-[#0A1628] text-white`}
       >
-        <ThemeProvider>
-          <ScrollProgress />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-          <FloatingContact />
-          <CookieBanner />
-        </ThemeProvider>
+        <ScrollProgress />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <FloatingContact />
+        <CookieBanner />
       </body>
     </html>
   );
