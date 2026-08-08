@@ -104,10 +104,11 @@
   }
 
   .gold-gradient-text, .red-gradient-text {
-    background: linear-gradient(135deg, #FF0033 0%, #FFCC00 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background: linear-gradient(135deg, #FF0033 0%, #FF6600 50%, #FFCC00 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
   }
 
   .red-text {

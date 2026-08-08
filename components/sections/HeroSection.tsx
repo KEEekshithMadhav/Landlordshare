@@ -54,7 +54,9 @@ export default function HeroSection() {
             Buy Verified
             <br />
             <span className="inline-block pb-1 border-b-[4px] border-[#FF0033]">
-              <span className="red-gradient-text">Landlord Share</span>
+              <span className="bg-gradient-to-r from-[#FF0033] via-[#FF6600] to-[#FFCC00] bg-clip-text text-transparent font-black">
+                Landlord Share
+              </span>
             </span>
             <br />
             <span className="text-white">Property Safely.</span>

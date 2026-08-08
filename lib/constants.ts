@@ -12,9 +12,39 @@ export const NAV_LINKS = [
 ];
 
 export const PROPERTIES = [
-  // --- First 8 Properties (Displayed initially as per List of Availability) ---
+  // --- First Batch (Featured Properties) ---
   {
     id: 1,
+    name: "iWA by SRIAS",
+    location: "Nanakramguda",
+    type: "3, 3.5, 4 & 4.5 BHK",
+    area: "2,290 – 4,710 Sq.Ft.",
+    price: "₹9,500/Sq.Ft.",
+    possession: "Tower 6 Available",
+    rera: true,
+    payment: "OTP Payment Only",
+    badge: "New Launch",
+    highlight: "Tower 6 Available",
+    tag: "Nanakramguda",
+    image: "/properties/iwa-by-srias.webp",
+  },
+  {
+    id: 2,
+    name: "Mango Leaf Villas",
+    location: "Osman Nagar",
+    type: "3 & 4 BHK Villas",
+    area: "2,739 – 3,084 Sq.Ft.",
+    price: "OTP Payment Only",
+    possession: "Under Construction",
+    rera: true,
+    payment: "OTP Payment Only",
+    badge: "Luxury Villas",
+    highlight: "200 – 317 Sq.Yds. Plot",
+    tag: "Osman Nagar",
+    image: "/properties/mango-leaf-villas.jpg",
+  },
+  {
+    id: 3,
     name: "Linq by Raghava",
     location: "Kokapet",
     type: "3 BHK Premium",
@@ -29,7 +59,7 @@ export const PROPERTIES = [
     image: "/properties/linq-raghava.png",
   },
   {
-    id: 2,
+    id: 4,
     name: "Prestige Golden Groove",
     location: "Tellapur",
     type: "2, 3 & 4 BHK",
@@ -44,7 +74,7 @@ export const PROPERTIES = [
     image: "/properties/prestige-golden-groove.webp",
   },
   {
-    id: 3,
+    id: 5,
     name: "Rajpushpa Prestinia",
     location: "Kokapet",
     type: "2 & 3 BHK",
@@ -59,7 +89,7 @@ export const PROPERTIES = [
     image: "/properties/rajpushpa-prestinia.webp",
   },
   {
-    id: 4,
+    id: 6,
     name: "SSI Fortune Grande",
     location: "Neopolis",
     type: "3.5 & 4 BHK",
@@ -74,7 +104,7 @@ export const PROPERTIES = [
     image: "/properties/ssi-fortune.png",
   },
   {
-    id: 5,
+    id: 7,
     name: "Trilight",
     location: "Kokapet",
     type: "3 & 4 BHK",
@@ -89,7 +119,7 @@ export const PROPERTIES = [
     image: "/properties/trilight.png",
   },
   {
-    id: 6,
+    id: 8,
     name: "Anvita High9",
     location: "Tellapur",
     type: "2 & 3 BHK",
@@ -103,8 +133,10 @@ export const PROPERTIES = [
     tag: "Tellapur",
     image: "/properties/anvita-high9.webp",
   },
+
+  // --- Additional Available Properties ---
   {
-    id: 7,
+    id: 9,
     name: "DSR Altitude",
     location: "Tellapur",
     type: "3 BHK Flats",
@@ -119,7 +151,7 @@ export const PROPERTIES = [
     image: "/properties/dsr-altitude.webp",
   },
   {
-    id: 8,
+    id: 10,
     name: "Saanvi Prelaunch",
     location: "Kokapet",
     type: "3 BHK Flats",
@@ -133,10 +165,8 @@ export const PROPERTIES = [
     tag: "Kokapet",
     image: "/properties/saanvi-prelaunch.png",
   },
-
-  // --- Additional Available Properties ---
   {
-    id: 9,
+    id: 11,
     name: "Aparna New Lands",
     location: "Tellapur",
     type: "2.5 & 3 BHK Flats",
@@ -151,7 +181,7 @@ export const PROPERTIES = [
     image: "/properties/saanvi-prelaunch.png",
   },
   {
-    id: 10,
+    id: 12,
     name: "Vasavi Atlantis",
     location: "Narsingi",
     type: "2 & 3 BHK Flats",
@@ -166,7 +196,7 @@ export const PROPERTIES = [
     image: "/properties/vasavi-atlantis.webp",
   },
   {
-    id: 11,
+    id: 13,
     name: "Vajra West City",
     location: "Kollur",
     type: "2.5 & 3 BHK Flats",
@@ -181,7 +211,7 @@ export const PROPERTIES = [
     image: "/properties/vajra-west-city.webp",
   },
   {
-    id: 12,
+    id: 14,
     name: "Anvita Ivana",
     location: "Tellapur",
     type: "2 & 3 BHK Flats",
@@ -196,7 +226,7 @@ export const PROPERTIES = [
     image: "/properties/anvita-ivana.webp",
   },
   {
-    id: 13,
+    id: 15,
     name: "Moonglade",
     location: "Narsingi",
     type: "2 & 3 BHK Flats",
@@ -211,7 +241,7 @@ export const PROPERTIES = [
     image: "/properties/moonglade.webp",
   },
   {
-    id: 14,
+    id: 16,
     name: "Aparna Cyber4",
     location: "Osman Nagar",
     type: "3 & 4 BHK Flats",
@@ -222,11 +252,11 @@ export const PROPERTIES = [
     payment: "One Time Payment",
     badge: "Premium",
     highlight: "Near Ready",
-    tag: "Kokapet",
+    tag: "Osman Nagar",
     image: "/properties/aparna-cyber4.webp",
   },
   {
-    id: 15,
+    id: 17,
     name: "Candeur Crescent",
     location: "Kondapur",
     type: "3 BHK",
@@ -241,7 +271,7 @@ export const PROPERTIES = [
     image: "/properties/candeur-crescent.webp",
   },
   {
-    id: 16,
+    id: 18,
     name: "Hallmark Nature Nest",
     location: "Kollur",
     type: "Villas",
@@ -256,7 +286,7 @@ export const PROPERTIES = [
     image: "/properties/hallmark-nature-nest.webp",
   },
   {
-    id: 17,
+    id: 19,
     name: "Raghava Cinq",
     location: "Financial District",
     type: "4 BHK Flats",
@@ -267,11 +297,11 @@ export const PROPERTIES = [
     payment: "Regular Payment",
     badge: "Ultra Luxury",
     highlight: "Premium Location",
-    tag: "Kokapet",
+    tag: "Nanakramguda",
     image: "/properties/raghava-cinq.webp",
   },
   {
-    id: 18,
+    id: 20,
     name: "4 BHK Villas Kollur",
     location: "Kollur",
     type: "4 BHK Villas",
@@ -286,7 +316,7 @@ export const PROPERTIES = [
     image: "/properties/villas-kollur.webp",
   },
   {
-    id: 19,
+    id: 21,
     name: "Aparna One",
     location: "Shaikpet",
     type: "3 & 4 BHK Flats",
@@ -301,7 +331,7 @@ export const PROPERTIES = [
     image: "/properties/aparna-one.webp",
   },
   {
-    id: 20,
+    id: 22,
     name: "Raghava IRIS",
     location: "Gachibowli",
     type: "4 & 6 BHK Flats",
@@ -316,7 +346,7 @@ export const PROPERTIES = [
     image: "/properties/raghava-iris.webp",
   },
   {
-    id: 21,
+    id: 23,
     name: "Elegans Homes Villas",
     location: "Kollur",
     type: "4 BHK Villas",
@@ -331,7 +361,7 @@ export const PROPERTIES = [
     image: "/properties/elegans-homes-villas.webp",
   },
   {
-    id: 22,
+    id: 24,
     name: "Sriven IRIS",
     location: "Narsingi",
     type: "5 BHK Villas",
@@ -346,7 +376,7 @@ export const PROPERTIES = [
     image: "/properties/sriven-iris.webp",
   },
   {
-    id: 23,
+    id: 25,
     name: "Rajpushpa Prestinia II",
     location: "Kokapet",
     type: "2 & 3 BHK Flats",
@@ -361,7 +391,7 @@ export const PROPERTIES = [
     image: "/properties/rajpushpa-prestinia-2.webp",
   },
   {
-    id: 24,
+    id: 26,
     name: "My Home APAS",
     location: "Kokapet",
     type: "3 & 3.5 BHK Flats",
@@ -376,7 +406,7 @@ export const PROPERTIES = [
     image: "/properties/my-home-apas.webp",
   },
   {
-    id: 25,
+    id: 27,
     name: "SRR River View",
     location: "Narsingi",
     type: "3 BHK Flat",
@@ -502,6 +532,8 @@ export const PARTNERS: { name: string; initials: string; color: string; logo?: s
   { name: "SSI Developers", initials: "SS", color: "bg-red-600", logo: "/partners/ssi.png" },
   { name: "Sriven Projects", initials: "SP", color: "bg-lime-700", logo: "/partners/sriven.png" },
   { name: "Elegans Homes", initials: "EH", color: "bg-fuchsia-600", logo: "/partners/elegans.png" },
+  { name: "SRIAS Life Spaces", initials: "SL", color: "bg-emerald-700", logo: "/partners/srias.png" },
 ];
 
-export const AREAS = ["All", "Kokapet", "Tellapur", "Narsingi", "Neopolis"];
+export const AREAS = ["All", "Nanakramguda", "Osman Nagar", "Kokapet", "Tellapur", "Narsingi", "Neopolis"];
+
