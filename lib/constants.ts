@@ -643,7 +643,7 @@ export const PARTNERS: { name: string; initials: string; color: string; logo?: s
   { name: "Aparna Constructions", initials: "AC", color: "bg-blue-600", logo: "/partners/aparna.png" },
   { name: "Vasavi Group", initials: "VG", color: "bg-amber-600", logo: "/partners/vasavi.jpg" },
   { name: "Vajra Builders", initials: "VB", color: "bg-purple-600", logo: "/partners/vajra.png" },
-  { name: "Anvita Projects", initials: "AP", color: "bg-emerald-600", logo: "/partners/Anvita.png" },
+  { name: "Anvita Projects", initials: "AP", color: "bg-emerald-600", logo: "/partners/anvita.png" },
   { name: "Rajpushpa Properties", initials: "RP", color: "bg-rose-600", logo: "/partners/rajpushpa.png" },
   { name: "Hallmark Builders", initials: "HB", color: "bg-indigo-600", logo: "/partners/hallmark.png" },
   { name: "Raghava Group", initials: "RG", color: "bg-teal-600", logo: "/partners/raghava logo.svg" },
