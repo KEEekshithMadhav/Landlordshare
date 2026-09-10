@@ -33,11 +33,13 @@ export default function TrustedBy() {
               className="flex items-center justify-center shrink-0 h-16 w-36 cursor-pointer group"
             >
               {partner.logo ? (
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="h-12 w-auto max-w-[130px] object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-                />
+                <div className="flex items-center justify-center w-full h-full bg-slate-100 rounded-xl px-3 group-hover:bg-slate-200 group-hover:scale-105 transition-all duration-300">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="h-10 w-auto max-w-[110px] object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
               ) : (
                 <span className="font-manrope font-bold text-slate-500 text-base grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:text-[#C5922E] transition-all">
                   {partner.name}

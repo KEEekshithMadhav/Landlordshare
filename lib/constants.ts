@@ -641,21 +641,24 @@ export const FAQS = [
 
 export const PARTNERS: { name: string; initials: string; color: string; logo?: string }[] = [
   { name: "Aparna Constructions", initials: "AC", color: "bg-blue-600", logo: "/partners/aparna.png" },
-  { name: "Vasavi Group", initials: "VG", color: "bg-amber-600", logo: "/partners/vasavi.png" },
+  { name: "Vasavi Group", initials: "VG", color: "bg-amber-600", logo: "/partners/vasavi.jpg" },
   { name: "Vajra Builders", initials: "VB", color: "bg-purple-600", logo: "/partners/vajra.png" },
-  { name: "Anvita Projects", initials: "AP", color: "bg-emerald-600", logo: "/partners/anvita.png" },
+  { name: "Anvita Projects", initials: "AP", color: "bg-emerald-600", logo: "/partners/Anvita.png" },
   { name: "Rajpushpa Properties", initials: "RP", color: "bg-rose-600", logo: "/partners/rajpushpa.png" },
   { name: "Hallmark Builders", initials: "HB", color: "bg-indigo-600", logo: "/partners/hallmark.png" },
-  { name: "Raghava Group", initials: "RG", color: "bg-teal-600", logo: "/partners/raghava.png" },
+  { name: "Raghava Group", initials: "RG", color: "bg-teal-600", logo: "/partners/raghava logo.svg" },
   { name: "Candeur Landmarks", initials: "CL", color: "bg-orange-600", logo: "/partners/candeur.png" },
   { name: "My Home Group", initials: "MH", color: "bg-sky-600", logo: "/partners/my-home.png" },
   { name: "SRR Holdings", initials: "SR", color: "bg-violet-600", logo: "/partners/srr.png" },
   { name: "DSR Infrastructure", initials: "DI", color: "bg-cyan-700", logo: "/partners/dsr.png" },
   { name: "Prestige Group", initials: "PG", color: "bg-slate-700", logo: "/partners/prestige.png" },
-  { name: "SSI Developers", initials: "SS", color: "bg-red-600", logo: "/partners/ssi.png" },
-  { name: "Sriven Projects", initials: "SP", color: "bg-lime-700", logo: "/partners/sriven.png" },
   { name: "Elegans Homes", initials: "EH", color: "bg-fuchsia-600", logo: "/partners/elegans.png" },
-  { name: "SRIAS Life Spaces", initials: "SL", color: "bg-emerald-700", logo: "/partners/srias.png" },
+  { name: "Trilight", initials: "TL", color: "bg-blue-800", logo: "/partners/Trilight.png" },
+  { name: "IRA Builders", initials: "IR", color: "bg-green-700", logo: "/partners/IRA-logo.png" },
+  { name: "Sri Sreenivasa", initials: "SS", color: "bg-orange-700", logo: "/partners/Sri-Sreenivasa.png.webp" },
+  { name: "Sukhi Homes", initials: "SH", color: "bg-pink-600", logo: "/partners/sukhi logo-new.png" },
+  { name: "Tattva", initials: "TV", color: "bg-indigo-800", logo: "/partners/tattva-logo.png" },
+  { name: "E-Infra", initials: "EI", color: "bg-gray-700", logo: "/partners/E-infra.png" },
 ];
 
 export const AREAS = ["All", "Nanakramguda", "Osman Nagar", "Kokapet", "Tellapur", "Narsingi", "Neopolis", "Kollur", "Kondapur", "Gachibowli", "Patancheru"];
