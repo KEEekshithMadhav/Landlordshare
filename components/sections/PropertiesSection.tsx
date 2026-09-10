@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   MapPin, Home, Maximize2, Clock, BadgeCheck,
-  CreditCard, Tag, ArrowRight, SlidersHorizontal, ChevronUp
+  CreditCard, Tag, ArrowRight, SlidersHorizontal, ChevronUp, ExternalLink
 } from "lucide-react";
 import { PROPERTIES, AREAS } from "@/lib/constants";
 import { staggerContainer, staggerItem, viewportConfig } from "@/lib/animations";
@@ -152,18 +152,30 @@ export default function PropertiesSection() {
                         {property.price}
                       </p>
                     </div>
-                    <button
-                      onClick={() =>
-                        setSelectedProperty({
-                          name: property.name,
-                          location: property.location,
-                        })
-                      }
-                      className="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-[#FF0033] to-[#E60026] text-white text-xs font-bold rounded-xl hover:from-[#D6002B] hover:to-[#FF0033] hover:shadow-[0_0_20px_rgba(255,0,51,0.4)] transition-all duration-300 hover:scale-105 active:scale-95 shrink-0"
-                    >
-                      Know More
-                      <ArrowRight size={13} />
-                    </button>
+                    {(property as { link?: string }).link ? (
+                      <a
+                        href={(property as { link?: string }).link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-[#FF0033] to-[#E60026] text-white text-xs font-bold rounded-xl hover:from-[#D6002B] hover:to-[#FF0033] hover:shadow-[0_0_20px_rgba(255,0,51,0.4)] transition-all duration-300 hover:scale-105 active:scale-95 shrink-0"
+                      >
+                        View Page
+                        <ExternalLink size={13} />
+                      </a>
+                    ) : (
+                      <button
+                        onClick={() =>
+                          setSelectedProperty({
+                            name: property.name,
+                            location: property.location,
+                          })
+                        }
+                        className="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-[#FF0033] to-[#E60026] text-white text-xs font-bold rounded-xl hover:from-[#D6002B] hover:to-[#FF0033] hover:shadow-[0_0_20px_rgba(255,0,51,0.4)] transition-all duration-300 hover:scale-105 active:scale-95 shrink-0"
+                      >
+                        Know More
+                        <ArrowRight size={13} />
+                      </button>
+                    )}
                   </div>
                 </div>
               </motion.div>
