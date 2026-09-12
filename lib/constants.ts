@@ -34,7 +34,7 @@ export const PROPERTIES = [
     location: "Osman Nagar",
     type: "3 & 4 BHK Villas",
     area: "2,739 – 3,084 Sq.Ft.",
-    price: "OTP Payment Only",
+    price: "Call for Price",
     possession: "Under Construction",
     rera: true,
     payment: "OTP Payment Only",
