@@ -1,3 +1,4 @@
+import PriceTicker from "@/components/layout/PriceTicker";
 import HeroSection from "@/components/sections/HeroSection";
 import TrustedBy from "@/components/sections/TrustedBy";
 import AboutSection from "@/components/sections/AboutSection";
@@ -9,6 +10,7 @@ import FinalCTA from "@/components/sections/FinalCTA";
 export default function Home() {
   return (
     <>
+      <PriceTicker />
       <HeroSection />
       <TrustedBy />
       <AboutSection />

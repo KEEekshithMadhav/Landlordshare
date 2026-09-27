@@ -26,7 +26,7 @@ export default function PriceTicker() {
     <div
       role="region"
       aria-label="Price announcement"
-      className="relative z-30 w-full bg-gradient-to-r from-[#070E1E] via-[#0F1D3A] to-[#070E1E] border-t border-slate-200/20 border-b border-[#FF0033]/30 text-white text-xs sm:text-sm py-2 overflow-hidden shadow-inner"
+      className="relative z-30 w-full mt-20 sm:mt-24 bg-gradient-to-r from-[#070E1E] via-[#0F1D3A] to-[#070E1E] border-b border-[#FF0033]/30 text-white text-xs sm:text-sm py-2 overflow-hidden shadow-inner"
     >
       <div className="flex items-center">
         {/* Left pinned badge for quick context */}
