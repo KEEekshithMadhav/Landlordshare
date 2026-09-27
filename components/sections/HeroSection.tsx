@@ -29,7 +29,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content — Transparent & Aligned to Right */}
-      <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-20">
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-36 sm:pt-48 pb-20">
         <div className="max-w-2xl text-right ml-auto bg-transparent p-0">
           {/* Label */}
           <motion.div

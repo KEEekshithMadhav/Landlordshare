@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { NAV_LINKS, WHATSAPP_HREF, PHONE_HREF, PHONE_NUMBER } from "@/lib/constants";
 
+import PriceTicker from "./PriceTicker";
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,14 +25,15 @@ export default function Navbar() {
       <motion.header
         initial={{ y: 0, opacity: 1 }}
         animate={{
-          y: scrolled ? -100 : 0,
+          y: scrolled ? "-100%" : 0,
           opacity: scrolled ? 0 : 1,
           pointerEvents: scrolled ? "none" : "auto",
         }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm"
+        className="fixed top-0 left-0 right-0 z-40 shadow-sm"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white/95 backdrop-blur-md border-b border-slate-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 sm:h-24">
             {/* Logo with height 58px */}
             <Link href="/" className="flex items-center group">
@@ -79,7 +82,11 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </motion.header>
+      </div>
+
+      {/* Scrolling Announcement / Price Ticker */}
+      <PriceTicker />
+    </motion.header>
 
       {/* Mobile Menu */}
       <AnimatePresence>
