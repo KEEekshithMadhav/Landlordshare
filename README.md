@@ -29,8 +29,23 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Lead Management & CRM Integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Leads captured from the Contact Modal are submitted to `/api/lead` and processed as follows:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Google Sheets**:
+   - Deployed Google Apps Script URL:
+     `https://script.google.com/macros/s/AKfycbwmWDKSqS811fX3Ipdckgtiwv5lxXcd7IJdgyq3Te4seFHU6QCapT_TUNP33aCLBaWg/exec`
+   - Source code available in [`google-apps-script.js`](./google-apps-script.js).
+   - Automatically appends lead data (IST Timestamp, Name, Phone, Email, City, Property, Location, Source) to the active sheet.
+
+2. **Wylto CRM Webhook**:
+   - Webhook URL: `https://server.wylto.com/webhook/DFQUNxMp3IaNlLinPl`
+   - Configured in [lib/constants.ts](./lib/constants.ts) and [google-apps-script.js](./google-apps-script.js).
+   - Phone numbers are automatically converted to standard international format (`+91...`).
+
+3. **Environment Configuration** (`.env.local`):
+   ```env
+   GOOGLE_SCRIPT_URL=https://script.google.com/macros/s/AKfycbwmWDKSqS811fX3Ipdckgtiwv5lxXcd7IJdgyq3Te4seFHU6QCapT_TUNP33aCLBaWg/exec
+   WYLTO_WEBHOOK_URL=https://server.wylto.com/webhook/DFQUNxMp3IaNlLinPl
+   ```

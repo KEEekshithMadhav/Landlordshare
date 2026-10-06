@@ -2,6 +2,8 @@ export const PHONE_NUMBER = "9885858529";
 export const WHATSAPP_NUMBER = "918585854853";
 export const PHONE_HREF = `tel:${PHONE_NUMBER}`;
 export const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}`;
+export const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmWDKSqS811fX3Ipdckgtiwv5lxXcd7IJdgyq3Te4seFHU6QCapT_TUNP33aCLBaWg/exec";
+export const WYLTO_WEBHOOK_URL = "https://server.wylto.com/webhook/DFQUNxMp3IaNlLinPl";
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
