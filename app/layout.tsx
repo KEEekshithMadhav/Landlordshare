@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import FloatingContact from "@/components/ui/FloatingContact";
 import CookieBanner from "@/components/ui/CookieBanner";
+import TrackingInitializer from "@/components/providers/TrackingInitializer";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -124,6 +125,7 @@ export default function RootLayout({
       <body
         className={`${manrope.variable} ${inter.variable} font-inter antialiased bg-[#F8FAFC] text-[#0F172A]`}
       >
+        <TrackingInitializer />
         <ScrollProgress />
         <Navbar />
         <main>{children}</main>
